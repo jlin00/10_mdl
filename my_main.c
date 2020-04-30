@@ -234,8 +234,8 @@ void my_main() {
           {
             printf("\n\tCS1: %s",op[i].op.line.cs1->name);
           }
-        add_edge(tmp, op[i].op.line.p0[0], op[i].op.line.p0[1], op[i].op.line.p0[2],
-                 op[i].op.line.p1[0], op[i].op.line.p1[1], op[i].op.line.p1[2]);
+        add_edge(tmp, op[i].op.line.p0[0], op[i].op.line.p0[1], op[i].op.line.p0[1],
+                 op[i].op.line.p1[0], op[i].op.line.p1[1], op[i].op.line.p1[1]);
         matrix_mult(peek(systems), tmp);
         draw_lines(tmp, t, zb, g);
         tmp->lastcol = 0;
